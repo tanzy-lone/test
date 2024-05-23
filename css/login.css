@@ -1,0 +1,171 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 404px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  z-index: 0;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(0deg, transparent, transparent, #03e9f4, #03e9f4, #03e9f4);
+  transform-origin: bottom right;
+  animation: login 5s linear infinite;
+}
+
+.box::after {
+  background: linear-gradient(0deg, transparent, transparent, #ff2771, #ff2771, #ff2771);
+  animation-delay: -3s;
+}
+
+@keyframes login {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background: #262626;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.login-box .submit {
+  display: flex;
+  justify-content: center;
+}
+
+.login-box form .login_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 10px 20px;
+  letter-spacing: 2px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4;
+}
+
+.login-box .login_btn:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+.login-box .forget {
+  display: flex;
+  justify-content: flex-end;
+}
+.login-box .forget .forget_a {
+  color: #03e9f4;
+}
+
+.my_name {
+  text-align: center;
+  font-size: 3em;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  margin: 50px 0;
+  font-family: Vampiro One;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
