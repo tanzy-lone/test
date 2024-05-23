@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <title>首页</title>
+  <link rel="icon" href="http://ico.hillcloud.net/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4555961_s7a8g5vjijo.css">
+  <link rel="stylesheet" href="./css/init.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/time.js"></script>
+  <script src="./js/countup.js"></script>
+  <script type="text/javascript" src="./js/firework.js"></script>
+  <script type="text/javascript" src="./js/animate.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/mouse.js"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .container1 {
+      height: 1000px;
+    }
+
+    .back_top {
+      display: none;
+      position: fixed;
+      bottom: 200px;
+      right: 50px;
+      width: 60px;
+      height: 180px;
+
+      background: rgba(73, 155, 234, 1);
+      background: -moz-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(26, 188, 156, 1) 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(73, 155, 234, 1)), color-stop(100%, rgba(26, 188, 156, 1)));
+      background: -webkit-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(26, 188, 156, 1) 100%);
+      background: -o-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(26, 188, 156, 1) 100%);
+      background: -ms-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(26, 188, 156, 1) 100%);
+      background: linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(26, 188, 156, 1) 100%);
+      z-index: 999;
+      border-radius: 5px;
+    }
+
+    .back_top li {
+      margin: 5px 0;
+      padding: 5px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(188, 26, 99, 1);
+    }
+
+    .back_top li:nth-child(3) {
+      border: none;
+    }
+
+    .back_top .back_list .navi_404 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .back_top .back_list .back {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .back_top .back_list .calc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .back_top .back_list .iconfont {
+      color: rgba(192, 33, 97);
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .panner-wrapper .wrapper {
+      /* background: rgba(234, 110, 72, 1);
+      background: -moz-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(234, 110, 72, 1)), color-stop(100%, rgba(188, 26, 99, 1)));
+      background: -webkit-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+      background: -o-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+      background: -ms-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+      background: linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%); */
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      -webkit-transition: height 0.5s;
+    }
+  </style>
+  <script>
+    function svgClick() {
+      window.location.href = './reward.html'
+    }
+  </script>
+</head>
+
+<body>
+  <div class="back_top">
+    <ul class="back_list">
+      <li class="navi_404" onclick="window.location.href='./404.html'">
+        <i class="iconfont icon-icon-test"></i>
+        <span>404</span>
+      </li>
+      <li class="calc" onclick="window.location.href='./cal.html'">
+        <i class="iconfont icon-calcualtor"></i>
+        <span>计算器</span>
+      </li>
+      <li class="back">
+        <i class="iconfont icon-arrow-top"></i>
+        <span>返回顶部</span>
+      </li>
+
+    </ul>
+  </div>
+  <div class="main-header">
+    <ul>
+      <li>
+        <a href="./index.html" class="logo">
+          <img src="./images/ghost.png" alt="">
+          <span>RoseKiller</span>
+        </a>
+      </li>
+      <li>
+        <a href="./apptv.html">
+          发送弹幕
+        </a>
+      </li>
+      <li>
+        <a href="./spider.html">电子蜘蛛</a>
+      </li>
+      <li>
+        <a href="./framework.html">放烟花</a>
+      </li>
+
+
+    </ul>
+  </div>
+  <div class="container w">
+    <div class="bg">
+      <div class="user_info">
+        <div class="avatar">
+          <a href="./images/1.jpg">
+            <img src="./images/1.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="user_msg">
+          <p class="user_name">
+            <span class="username">Tanzylone</span>
+            <i class="iconfont icon-male"></i>
+            <svg t="1641538980838" viewBox="0 0 1901 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2673"
+              width="22" height="11" class="icon">
+              <path d="M154.916571 184.758857h1609.142858v707.364572h-1609.142858z" fill="#FFFFFF" p-id="2674"></path>
+              <path
+                d="M1779.565714 93.037714c22.674286 0 45.421714 20.772571 44.324572 43.300572l-0.877715 6.144v747.446857c0 22.454857-15.36 44.909714-41.472 48.859428l-8.118857 0.585143H144.603429a48.859429 48.859429 0 0 1-49.005715-41.325714l-0.585143-8.118857V228.937143c0-22.454857 15.36-44.909714 41.398858-48.786286l8.192-0.585143h1021.805714v-37.083428c0-22.454857 15.36-44.909714 41.398857-48.786286l8.118857-0.658286h563.565714z m-92.891428 105.033143h-383.926857c-16.457143 0-32.914286 14.628571-36.425143 30.939429l-0.658286 6.144v574.464c0 16.457143 14.628571 32.914286 30.939429 36.425143l6.144 0.658285h384c16.530286 0 32.987429-14.628571 36.498285-30.939428l0.658286-6.144V494.592c0-16.530286-14.628571-32.914286-31.012571-36.425143l-6.144-0.658286h-297.179429V321.609143h297.179429c16.530286 0 32.987429-14.628571 36.498285-30.939429l0.658286-6.144v-49.371428c0-18.578286-18.578286-37.083429-37.156571-37.083429zM733.110857 284.598857h-49.590857c-18.578286 0-37.156571 18.505143-37.156571 37.010286v302.738286c0 16.749714 0 31.817143 6.217142 37.010285l173.348572 172.909715c7.899429 7.899429 23.259429 10.752 33.426286 11.849142l9.947428 0.585143 8.557714-0.438857c10.093714-0.950857 26.550857-3.657143 34.816-11.995428l185.782858-172.909715c4.973714-4.900571 5.997714-13.824 6.144-23.478857V327.68c0-18.505143-18.505143-37.010286-37.083429-37.010286h-49.517714c-18.651429 0-37.156571 18.505143-37.156572 37.083429v277.942857l-105.325714 104.96-105.325714-104.96V321.609143c0-18.505143-18.505143-37.010286-37.083429-37.010286z m-445.952 0h-49.517714c-16.530286 0-33.060571 14.628571-36.571429 30.866286l-0.585143 6.144v488.009143c0 16.530286 14.628571 32.914286 30.939429 36.425143l6.217143 0.658285h297.252571c16.530286 0 32.987429-14.628571 36.498286-30.939428l0.658286-6.144v-49.371429c0-16.603429-14.628571-32.987429-31.012572-36.425143l-6.144-0.658285H324.242286v-401.554286c0-18.505143-18.578286-37.010286-37.156572-37.010286z m1312.914286 296.448v142.116572h-210.505143V581.046857h210.505143z"
+                fill="#FF0000" p-id="2675" class="bg"></path>
+            </svg>
+            <img src="./images/2.webp" onclick="svgClick()" alt="">
+          </p>
+          <p class="desc">精通Vue2,Vue3,React,Angular,Nginx,Linux,nodeJs,rust等单词拼写</p>
+        </div>
+        <div class="get_user_detail">
+          <button class="custom-btn btn-9 zindex" onclick="window.location.href='./login.html'">退出登录</button>
+        </div>
+      </div>
+    </div>
+    <div class="panner-wrapper w">
+      <div class="panel_dy wrapper">
+        <a href="https://www.douyin.com/user/self" title="我的抖音">
+          <img src="https://p3-pc-weboff.byteimg.com/tos-cn-i-9r5gewecjs/logo-horizontal-small.svg" alt="">
+        </a>
+        <div class="info">
+          <p class="name">雾隐失星河</p>
+          <p class="number"><span>11000</span></p>
+        </div>
+      </div>
+
+      <div class="panel_dy wrapper">
+        <a href="https://www.douyin.com/user/self" title="我的快手">
+          <img src="./images/kuaishou.webp" alt="我的快手">
+        </a>
+        <div class="info">
+          <p class="name">柠檬不萌</p>
+          <p class="number"><span>12000</span></p>
+        </div>
+      </div>
+
+      <div class="panel_dy wrapper">
+        <a href="https://www.xiaohongshu.com/explore" title="我的小红书">
+          <img src="./images/xiaohongshu.png" alt="我的小红书">
+        </a>
+        <div class="info">
+          <p class="name">雾隐失星河</p>
+          <p class="number"><span>9000</span></p>
+        </div>
+      </div>
+
+      <div class="panel_dy wrapper">
+        <a href="https://www.csdn.net" title="我的微店">
+          <img src="./images/weidian.jfif" alt="我的微店">
+        </a>
+        <div class="info">
+          <p class="name">雾隐失星河</p>
+          <p class="number"><span>4600</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper_w">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:;">
+              <img src="./images/liuhua1.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;">
+              <img src="./images/liuhua2.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;">
+              <img src="./images/liuhua3.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;">
+              <img src="./images/liuhua4.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;">
+              <img src="./images/liuhua5.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:;">
+              <img src="./images/liuhua6.jpg" alt="">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="card-list w">
+      <h3 class="card-headers">名人鉴赏</h3>
+      <div class="card-main">
+        <div class="card">
+          <a href="./liudehua.html">
+            <img src="./images/ldh.webp" alt="">
+          </a>
+          <div class="mask">刘德华</div>
+        </div>
+        <div class="card">
+          <a href="./chenguanxi.html">
+            <img src="./images/cgx.webp" alt="">
+          </a>
+          <div class="mask">陈冠希</div>
+        </div>
+
+        <div class="card">
+          <a href="./pengyuyan.html">
+            <img src="./images/pyy.webp" alt="">
+          </a>
+          <div class="mask">彭于晏</div>
+        </div>
+
+        <div class="card">
+          <a href="./liangchaowei.html">
+            <img src="./images/lcw.webp" alt="">
+          </a>
+          <div class="mask">梁朝伟</div>
+        </div>
+      </div>
+    </div>
+    <div class="page-header">技术大牛</div>
+    <div class="page-content w">
+      <div class="card_list">
+        <div class="content">
+          <h2 class="title">布兰登·艾克</h2>
+          <p class="copy">Javascript之父</p>
+          <button class="btn" onclick="location.href='./js.html'">了解更多</button>
+        </div>
+      </div>
+      <div class="card_list">
+        <div class="content">
+          <h2 class="title">尤雨溪</h2>
+          <p class="copy">Vue框架创始人</p>
+          <button class="btn" onclick="location.href='./vue.html'">了解更多</button>
+        </div>
+      </div>
+      <div class="card_list">
+        <div class="content">
+          <h2 class="title">Dan Abramov</h2>
+          <p class="copy">React作者</p>
+          <button class="btn" onclick="location.href='./react.html'">了解更多</button>
+        </div>
+      </div>
+      <div class="card_list">
+        <div class="content">
+          <h2 class="title">余胜军</h2>
+          <p class="copy">Java之父</p>
+          <button class="btn" onclick="location.href='./java.html'">了解更多</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w list2-wrapper">
+      <div class="page-header">超燃视频合集</div>
+      <div class="page-main">
+        <ul class="list2">
+          <li class="card_list2">
+            <header class="card_thumb">
+              <a href="./video/5t5.mp4">
+                <img src="./images/5t5.PNG" alt="" />
+              </a>
+            </header>
+
+            <div class="card_body">
+              <div class="card_subtitle">咒术回战</div>
+              <div class="card_description">
+                <p>
+                  电视动画片《咒术回战》改编自芥见下下著作的同名漫画作品，于2019年11月25日宣布电视动画化的消息，该系列由MAPPA负责制作。第1期于2020年10月3日—2021年3月27日播出
+                  ，全24集
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card_list2">
+            <header class="card_thumb">
+              <a href="./video/zs.mp4">
+                <img src="./images/s1.png" alt="" />
+              </a>
+            </header>
+
+            <div class="card_body">
+              <div class="card_subtitle">咒术回战</div>
+              <div class="card_description">
+                <p>
+                  电视动画片《咒术回战》改编自芥见下下著作的同名漫画作品，于2019年11月25日宣布电视动画化的消息，该系列由MAPPA负责制作。第1期于2020年10月3日—2021年3月27日播出
+                  ，全24集
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card_list2">
+            <header class="card_thumb">
+              <a href="./video/s2.mp4">
+                <img src="./images/s3.jpg" alt="" />
+              </a>
+            </header>
+
+            <div class="card_body">
+
+              <div class="card_subtitle">Fate系列</div>
+              <div class="card_description">
+                <p>
+                  Fate（フェイト）是TYPE-MOON原作的系列作品，于2004年1月30日发售的PC平台18禁文字冒险游戏《Fate/stay
+                  night》，同时也是TYPE-MOON商业化后初次亮相的作品。由于广受欢迎，吸引了一些作家参与制作，由本篇衍生诸多人气作品。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card_list2">
+            <header class="card_thumb">
+              <a href="./video/s1.mp4">
+                <img src="./images/s2.png" alt="" />
+              </a>
+            </header>
+
+            <div class="card_body">
+              <div class="card_subtitle">Fate系列</div>
+              <div class="card_description">
+                <p>
+                  Fate（フェイト）是TYPE-MOON原作的系列作品，于2004年1月30日发售的PC平台18禁文字冒险游戏《Fate/stay
+                  night》，同时也是TYPE-MOON商业化后初次亮相的作品。由于广受欢迎，吸引了一些作家参与制作，由本篇衍生诸多人气作品。
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/init.js"></script>
+  <script src="./js/scrollTo.js"></script>
+</body>
+
+</html>
